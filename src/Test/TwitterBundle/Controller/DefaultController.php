@@ -11,8 +11,12 @@ class DefaultController extends Controller
 {
     public function newAction($username)
     {
+        //list parameters
+        $list_id = 231207061;
+        $list_slug = 'Actualized.org';
+        //get client, request and response
         $twitterClient = $this->container->get('guzzle.twitter.client');
-        $newuser = $twitterClient->post('lists/members/create.json?list_id=231207061&slug=Actualized.org&screen_name='.$username)
+        $newuser = $twitterClient->post('lists/members/create.json?list_id='.$list_id.'&slug='.$list_slug.'&screen_name='.$username)
         ->send()->getBody();
 
         $getuser = $twitterClient->get('users/show.json?screen_name='.$username)->send()->getBody();
