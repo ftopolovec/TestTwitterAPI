@@ -1,0 +1,8 @@
+parameters:
+  twitter.baseurl: https://api.twitter.com/1.1
+
+  twitter.config:
+    consumer_key:  tTevnYvhv8Tvw7aCjGpuBD2Qn
+    consumer_secret: ejJzAksUGaU3OAMM0GxOBzHYLigKI1pW4BGKDb9cpqmcCUcg4Q
+    token: 271558869-PAPbqxoj8NBRBvrKq0UKiliXnvMkebUro43urmtS
+    token_secret: D57H0DIMWDOEtAlHSn5E88wI0EnQbt6ILa1PDWl0FQran

@@ -1,0 +1,15 @@
+Username: <br>
+{% for user,key in singleuser %}
+    {{ key.username }}
+{% endfor %}
+<br><br>
+
+Tweets:
+<br><br>
+{% for tweet,key in tweets %}
+    {{ key.text }} <br>
+{% endfor %}
+
+<hr>
+<a href="{{ path('test_twitter_homepage') }}">Home</a>
+

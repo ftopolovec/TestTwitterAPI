@@ -1,0 +1,4 @@
+test_twitter:
+    resource: "@TestTwitterBundle/Resources/config/routing.yml"
+    prefix:   /
+

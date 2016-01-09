@@ -1,0 +1,15 @@
+test_twitter_homepage:
+    path:     /
+    defaults: { _controller: TestTwitterBundle:Default:index }
+
+new:
+    path: /{username}
+    defaults: { _controller: TestTwitterBundle:Default:new }
+
+single:
+    path: /user/{username}/{id}
+    defaults: { _controller: TestTwitterBundle:Default:single }
+
+search:
+    path: /api/search
+    defaults: { _controller: TestTwitterBundle:Default:search }
